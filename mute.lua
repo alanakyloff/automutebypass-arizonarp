@@ -1,7 +1,12 @@
 local sampev = require('samp.events')
 local inicfg = require('inicfg')
-
+local memory = require 'memory'
 local sf = string.format
+
+local encoding = require 'encoding'
+encoding.default = 'CP1251'
+u8 = encoding.UTF8
+
 
 local IniFilename = 'vrbypass.ini'
 local config = {
